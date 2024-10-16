@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #89CFF0, #4682B4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #f0f8ff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.cookie-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#cookie-type {
+    font-weight: bold;
+    font-size: 20px;
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #b0c4de;
+    border-radius: 5px;
+    background-color: #e6f2ff;
+    transition: box-shadow 0.3s ease;
+    width: 324px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 102, 204, 0.5);
+}
+
+/* Кнопка отправки */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4682B4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4169E1;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
